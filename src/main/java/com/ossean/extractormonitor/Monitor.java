@@ -58,6 +58,7 @@ public class Monitor extends TimerTask {
 		// 加载extract的配置文件
 		getExtractorConfig("extractTables");
 		checkDestItem(tables);
+		//开始统计所需的各个属性的值与每个站点现有的数据总量
 		for (int i = 0; i < tables.size(); i++) {
 			DesTable dest = new DesTable(tables.get(i), category.get(i));
 			dest.setDay_extractor(extractorSourceData.selectByTime(
@@ -66,8 +67,9 @@ public class Monitor extends TimerTask {
 					tables.get(i), timeCol.get(i), begin_week, end));
 			dest.setMonth_extractor(extractorSourceData.selectByTime(
 					tables.get(i), timeCol.get(i), begin_month, end));
-
+			dest.setTotal_num(extractorSourceData.countNum(tables.get(i)));
 			destSource.updateExtractorItem(dest_table, dest);
+			destSource.updateTotalNum(tables.get(i), dest);
 		}
 	}
 

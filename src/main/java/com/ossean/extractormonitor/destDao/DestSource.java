@@ -24,4 +24,7 @@ public interface DestSource {
 	@Update("update ${table} set category=#{model.category},day_crawler=#{model.day_crawler},week_crawler=#{model.week_crawler},month_crawler=#{model.month_crawler} where website=#{model.website}")
 	public void updateCrawlerItem(@Param("table") String table, @Param("model") DesTable model);
 	
+	@Update("update ${table} set total_num=${model.total_num} where website=#{model.website}")
+	public void updateTotalNum(@Param("table") String table, @Param("model") DesTable model);
+	
 }
