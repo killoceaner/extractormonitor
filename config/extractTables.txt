@@ -10,3 +10,4 @@ oschina_project project exteactTime
 oschina_question topic extractTime
 sourceforge_project project extractTime
 stackoverflow_q topic extractTime
+openhub_project project extractTime
