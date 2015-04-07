@@ -69,7 +69,7 @@ public class Monitor extends TimerTask {
 					tables.get(i), timeCol.get(i), begin_month, end));
 			dest.setTotal_num(extractorSourceData.countNum(tables.get(i)));
 			destSource.updateExtractorItem(dest_table, dest);
-			destSource.updateTotalNum(tables.get(i), dest);
+			destSource.updateTotalNum(dest_table, dest);
 		}
 	}
 
