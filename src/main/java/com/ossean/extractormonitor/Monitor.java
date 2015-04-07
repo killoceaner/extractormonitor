@@ -42,7 +42,7 @@ public class Monitor extends TimerTask {
 	private String begin_week;
 	private String begin_month;
 	private String crawler_tail = "_html_detail";
-	private static String dest_table = "destable";
+	private static String dest_table = "ossean_monitors";
 
 	@Override
 	public void run() {
