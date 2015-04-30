@@ -20,7 +20,7 @@ import com.ossean.extractormonitor.destDao.DestSource;
 import com.ossean.util.TxtRead;
 
 @Repository("Monitor")
-public class Monitor extends TimerTask {
+public class ExtractorMonitor extends TimerTask {
 
 
 	@SuppressWarnings("restriction")
@@ -57,6 +57,7 @@ public class Monitor extends TimerTask {
 
 		// 加载extract的配置文件
 		getExtractorConfig("extractTables");
+		//添加每行数据的website属性
 		checkDestItem(tables);
 		//开始统计所需的各个属性的值与每个站点现有的数据总量
 		for (int i = 0; i < tables.size(); i++) {
@@ -135,7 +136,7 @@ public class Monitor extends TimerTask {
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext(
 				"classpath:/applicationContext*.xml");
-		Monitor m = (Monitor) applicationContext.getBean("Monitor");
+		ExtractorMonitor m = (ExtractorMonitor) applicationContext.getBean("Monitor");
 		// Main m = new Main();
 		m.begin();
 	}
