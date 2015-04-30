@@ -8,6 +8,6 @@ public interface ExtractorSourceData {
 	public int selectByTime(@Param("table") String table, @Param("timeCol") String timeCol, @Param("start") String start, @Param("end") String end);
 	
 	//SELECT COUNT(DISTINCT Url) FROM `cnblog_news`;
-	@Select("select count(distinct url) from ${table}")
+	@Select("select count(distinct Url) from ${table}")
 	public int countNum(@Param("table")String table);
 }
