@@ -73,7 +73,7 @@ public class ExtractorMonitor extends TimerTask {
 			destSource.updateTotalNum(dest_table, dest);
 		}
 	}
-
+    
 	public void getExtractorConfig(String txt_name) {
 		txt.clear();
 		tables.clear();

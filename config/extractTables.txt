@@ -1,14 +1,1 @@
-csdn_ask topic extractTime
-csdn_blogs blog extractTime
-csdn_topics blog extractTime
-cnblog_news news extractTime
-cnblog_question topic extractTime
-dewen_question topic extractTime
-freecode_projects project extract_time
-iteye_ask topic extractTime
-oschina_project project exteactTime
-oschina_question topic extractTime
-sourceforge_project project extractTime
-stackoverflow_q topic extractTime
-openhub_project project extractTime
-linuxtone project extractTime
+softpedia posts extractTime
