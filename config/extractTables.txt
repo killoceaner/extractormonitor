@@ -1,1 +1,28 @@
+<<<<<<< HEAD
 softpedia posts extractTime
+=======
+cnblog_question posts extractTime
+dewen_question posts extractTime
+iteye_ask posts extractTime
+openhub_project project extractTime
+sourceforge_project project extractTime
+stackoverflow_q posts extractTime
+csdn_ask posts extractTime
+csdn_blogs blog extractTime
+csdn_topics blog extractTime
+cnblog_news news extractTime
+freecode_projects project extract_time
+oschina_project project exteactTime
+oschina_question posts extractTime
+51cto_blog blog extractTime
+codeproject project extractTime
+lupaworld posts extractTime
+iteye_blog blog extractTime
+gna project extractTime
+iteye_blog blog extractTime
+apache project extractTime
+phpchina posts extractTime
+softpedia project extractTime
+slashdot posts extractTime
+neitui jobs extractTime
+>>>>>>> 6b1f0bfc2b8ce9a017cb49f0919e06e22c0b8af8
