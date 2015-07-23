@@ -13,8 +13,14 @@ public interface ExtractorSourceData {
 	//SELECT COUNT(DISTINCT Url) FROM `cnblog_news`;
 	@Select("select count(distinct Url) from ${table}")
 	public int countNum(@Param("table")String table);
+<<<<<<< HEAD
 
 	@Select("select * from table ${sourceTable} where postTime>=${startTime} and postTime<=${endTime} ")
 	public List<Map<String,Object>> selSourceData(@Param("sourcetable") String sourceTable , @Param("startTime")String startTime,@Param("endTime")String endTime );
 
+=======
+	
+	@Select("select * from ${table} where postTime >= ${startTime} and postTime <= ${endTime}")
+	public List<Map<String,Object>> selSourceData(@Param("table") String table , @Param("startTime")String startTime , @Param("endTime")String endTime);
+>>>>>>> test
 }
