@@ -56,6 +56,5 @@ public class PostType implements Comparable<PostType>{
 	    }else{
 	    	return 0;
 	    }
-	}
-			
+	}			
 }

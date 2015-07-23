@@ -1,5 +1,8 @@
 package com.ossean.extractormonitor.dao;
 
+import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
@@ -10,4 +13,7 @@ public interface ExtractorSourceData {
 	//SELECT COUNT(DISTINCT Url) FROM `cnblog_news`;
 	@Select("select count(distinct url) from ${table}")
 	public int countNum(@Param("table")String table);
+	
+	@Select("select * from ${table} where postTime >= ${startTime} and postTime <= ${endTime}")
+	public List<Map<String,Object>> selSourceData(@Param("table") String table , @Param("startTime")String startTime , @Param("endTime")String endTime);
 }
